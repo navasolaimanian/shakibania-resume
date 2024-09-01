@@ -12,8 +12,14 @@ module.exports = {
       },
       colors: {
         "gray": "#80898F",
-        "gray-dark": "#485966"
-      }
+        "gray-dark": "#485966",
+        "primary1": "#DCE6ED"
+      },
+      screens: {
+        '3xl': '2050px',
+        // => @media (min-width: 640px) { ... }
+  
+      },
     },
   },
   plugins: [],

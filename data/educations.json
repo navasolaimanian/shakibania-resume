@@ -1,0 +1,24 @@
+{
+    "educations": [
+        {
+            "image" : "/images/buali.png",
+            "university": "University of Unknown",
+            "degree": "MS degree, Computer Science",
+            "date": "Sep 2019 - Mar 2024",
+            "details": [
+                "Grade: 18.19/20 - 1st Rank",
+                "Supervisor: Prof. X X X"
+            ]
+        },
+        {
+            "image" : "/images/buali.png",
+            "university": "Bu-Ali Sina University",
+            "degree": "MS degree, Computer Science",
+            "date": "Sep 2019 - Mar 2024",
+            "details": [
+                "Grade: 18.19/20 - 1st Rank",
+                "Thesis: A Deep Learning Approach to Low-Light Image Enhancement"
+            ]
+        }
+    ]
+}
