@@ -1,25 +1,19 @@
 import React from 'react'
-import image from '../../public/bgImage.png'
-import rectangle32 from '../../public/Rectangle 32.png'
-import rectangle27 from '../../public/Rectangle 27.png'
-import person from '../../public/person.png'
-import mail from '../../public/mail.png'
-import googleScholar from '../../public/googleScholar.png'
-import LinkedIn from '../../public/LinkedIn.png'
-import X from '../../public/X.png'
-import github from '../../public/github.png'
-import cv from '../../public/cv.png'
-import Polygon from '../../public/Polygon.png'
+import image from '../../public/images/bgImage.png'
+import rectangle32 from '../../public/images/Rectangle 32.png'
+import rectangle27 from '../../public/images/Rectangle 27.png'
+import person from '../../public/images/person.png'
+import Polygon from '../../public/images/Polygon.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getSocialMediaData } from '../../lib/getSocialMediaData'
 
-const Introduction = () => {
+const Introduction = async () => {
+    const data = getSocialMediaData();
+
     return (
         <div className="relative -z-20 h-screen bg-cover bg-no-repeat grid grid-cols-2" style={{
-            // backgroundImage: `url(${image.src})`,
-            // "backgroundImage":`linear-gradient(transparent, mistyrose), url(${image.src})`,
             "backgroundImage": `linear-gradient(rgb(255 255 255 / 92%), rgb(255 255 255 / 92%)), url(${image.src})`,
-            // "background": "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://picsum.photos/200')";
         }}>
             <div className="relative">
                 <Image src={rectangle32} className="absolute -top-32 -z-10" />
@@ -46,31 +40,19 @@ const Introduction = () => {
                         <br />
                         University of X</p>
                     <ul className="flex items-center [&>*]:mx-3 mt-6">
-                        <li>
-                            <Link href="">
-                                <Image src={mail} />
-                            </Link>
+                        {data.socialMedias.map(socialMedia =>
+                            <li>
+                                <Link href={socialMedia.link}>
+                                    <Image
+                                        alt={socialMedia.alt}
+                                        src={socialMedia.image}
+                                        width={25}
+                                        height={25}
+                                    />
+                                </Link>
 
-                        </li>
-                        <li>
-                            <Image src={googleScholar} />
-                        </li>
-
-                        <li>
-                            <Image src={X} />
-                        </li>
-
-                        <li>
-                            <Image src={LinkedIn} />
-                        </li>
-
-                        <li>
-                            <Image src={github} />
-                        </li>
-
-                        <li>
-                            <Image src={cv} />
-                        </li>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </div>

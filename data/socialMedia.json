@@ -1,0 +1,34 @@
+{
+    "socialMedias": [
+        {
+            "alt": "mail",
+            "image": "/images/socialMedia/mail.png",
+            "link": ""
+        },
+        {
+            "alt": "googleScholar",
+            "image": "/images/socialMedia/googleScholar.png",
+            "link": ""
+        },
+        {
+            "alt": "X",
+            "image": "/images/socialMedia/X.png",
+            "link": ""
+        },
+        {
+            "alt": "LinkedIn",
+            "image": "/images/socialMedia/LinkedIn.png",
+            "link": ""
+        },
+        {
+            "alt": "github",
+            "image": "/images/socialMedia/github.png",
+            "link": ""
+        },
+        {
+            "alt": "cv",
+            "image": "/images/socialMedia/cv.png",
+            "link": ""
+        }
+    ]
+}
