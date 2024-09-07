@@ -11,7 +11,7 @@ const DetaiIntroduction = (props) => {
     return (
         <div className="relative">
             <Image src={rectangle32} className="absolute -top-32 -z-10" />
-            <div className="ml-40 mb-40 mt-[17rem]">
+            <div className="2xl:ml-40 ml-32 2xl:mb-40 mb-32 2xl:mt-[17rem] mt-[5rem]">
                 <p className="text-gray text-5xl font-medium mb-4">Hello! I’m</p>
                 <h1 className="text-gray-dark text-6xl font-black">Hossein  Shakibania</h1>
                 <p className="text-gray-dark text-xl text-justify mt-10">

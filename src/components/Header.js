@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className='bg-black flex justify-between px-32 pt-[67px] pb-4'>
+        <div className='bg-black flex justify-between px-32 pt-8 pb-4'>
             <div className='text-4xl'>
                 H o s s
             </div>

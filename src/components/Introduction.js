@@ -18,7 +18,7 @@ const Introduction = async () => {
             <DetaiIntroduction educationData={educationData} />
             <div className="relative">
                 <Image src={rectangle27} className="absolute right-0" />
-                <div className="absolute top-[13rem] 2xl:bg-cover right-[10%] flex flex-col items-center">
+                <div className="absolute top-[8rem] 2xl:top-[13rem] 2xl:bg-cover right-[10%] flex flex-col items-center">
                     <Image src={person} className="" />
                     <p className="mt-6 text-2xl text-center">MS in CS Student
                         <br />
