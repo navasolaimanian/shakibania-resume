@@ -17,13 +17,13 @@ const Introduction = async () => {
         }}>
             <DetaiIntroduction educationData={educationData} />
             <div className="relative">
-                <Image src={rectangle27} className="absolute right-0" />
-                <div className="absolute top-[8rem] 2xl:top-[13rem] 2xl:bg-cover right-[10%] flex flex-col items-center">
-                    <Image src={person} className="" />
-                    <p className="mt-6 text-2xl text-center">MS in CS Student
+                <Image src={rectangle27} className="absolute right-0 w-[70%] h-[80%] 3xl:w-full 3xl:h-full" />
+                <div className="absolute top-[3rem] 3xl:top-[13rem] 2xl:bg-cover right-[10%] flex flex-col items-center">
+                    <Image src={person} className="w-[20rem] h-[20rem] 3xl:w-[25rem] 3xl:h-[25rem]" />
+                    <p className="mt-4 3xl:mt-6 text-xl 3xl:text-2xl text-center">MS in CS Student
                         <br />
                         University of X</p>
-                    <ul className="flex items-center [&>*]:mx-3 mt-6">
+                    <ul className="flex items-center [&>*]:mx-3 mt-4 3xl:mt-6">
                         {data.socialMedias.map(socialMedia =>
                             <li>
                                 <Link href={socialMedia.link}>

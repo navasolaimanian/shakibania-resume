@@ -11,7 +11,7 @@ const EducationButton = (props) => {
             console.log('yay')
             props.setShowEducation(!props.showEducation)}}>
             {props.showEducation ? <Image src={downArrow} /> : <Image src={rightArrow} />}
-            <span className="text-gray-dark text-xl font-bold ml-2">
+            <span className="text-gray-dark text-lg 2xl:text-xl font-bold ml-2">
                 Education
             </span>
         </button>
