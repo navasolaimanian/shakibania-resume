@@ -1,4 +1,4 @@
-import Introduction from "@/components/Introduction";
+import Introduction from "@/components/introduction/Introduction";
 import News from "@/components/News";
 import Image from "next/image";
 import { getData } from "../../lib/getData";

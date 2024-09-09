@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
-import rightArrow from '../../public/images/rightArrow.png'
-import downArrow from '../../public/images/downArrow.png'
+import rightArrow from '../../public/images/icons/rightArrow.png'
+import downArrow from '../../public/images/icons/downArrow.png'
 import Image from 'next/image'
 
 
