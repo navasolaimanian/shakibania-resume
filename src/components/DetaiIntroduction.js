@@ -3,15 +3,15 @@ import React from 'react'
 import Image from 'next/image'
 import EducationButton from './EducationButton'
 import Educations from './Educations'
-import rectangle32 from '../../public/images/Rectangle 32.png'
+import rectangle32 from '../../public/images/design/Rectangle 32.png'
 import { useState } from 'react'
 
 const DetaiIntroduction = (props) => {
     const [showEducation, setShowEducation] = useState(false)
     return (
         <div className="relative">
-            <Image src={rectangle32} className="absolute -top-32 -z-10" />
-            <div className="ml-28 2xl:ml-40 mb-32 3xl:mb-40 mt-[3rem] 3xl:mt-[17rem]">
+            <Image src={rectangle32} className="absolute -top-32" />
+            <div className="ml-28 2xl:ml-40 mb-32 3xl:mb-40 mt-[5rem] 3xl:mt-[17rem]">
                 <p className="text-gray text-3xl 2xl:text-4xl 3xl:text-5xl font-medium mb-4">Hello! I’m</p>
                 <h1 className="text-gray-dark text-4xl 2xl:text-5xl 3xl:text-6xl font-black">Hossein  Shakibania</h1>
                 <p className="text-gray-dark 2xl:text-lg 3xl:text-xl text-justify mt-6 3xl:mt-10">
