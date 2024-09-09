@@ -1,17 +1,13 @@
 'use client';
 import React from 'react';
-import PublicationCart from './PublicationCart';
+import Cart from './Cart';
 import Image from 'next/image';
 import rectangle55 from '../../public/images/design/Rectangle 55.png';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 const Publications = (props) => {
   const [showAllPublications, setShowAllPublications] = useState(false);
-  const [numberOfPublications, setNumberOfPublications] = useState(false);
-  useEffect(() => {
-    showAllPublications ? setNumberOfPublications(0) : setNumberOfPublications(4);
-  }, [showAllPublications]);
 
   return (
     <div className="relative">
@@ -23,12 +19,12 @@ const Publications = (props) => {
         </div>
         <div className="flex flex-col items-center justify-center pt-8 xl:pt-16">
           {props.data.publications.slice(0, 2).map(publication =>
-            <PublicationCart publication={publication} />
+            <Cart publication={publication} />
           )}
         </div>
         <div className={`${showAllPublications ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in duration-700 flex flex-col items-center justify-center` }>
           {showAllPublications && props.data.publications.slice(3).map(publication =>
-            <PublicationCart publication={publication} />
+            <Cart publication={publication} />
           )}
         </div>
         <button className="text-[#748595] bg-primary1 py-2 px-4 rounded-lg mx-auto flex mb-10"
