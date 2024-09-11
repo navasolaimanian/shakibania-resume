@@ -2,32 +2,32 @@
     "socialMedias": [
         {
             "alt": "mail",
-            "image": "/images/socialMedia/mail.png",
+            "image": "/images/socialMedia/mail.svg",
             "link": ""
         },
         {
             "alt": "googleScholar",
-            "image": "/images/socialMedia/googleScholar.png",
+            "image": "/images/socialMedia/googleScholar.svg",
             "link": ""
         },
         {
             "alt": "X",
-            "image": "/images/socialMedia/X.png",
+            "image": "/images/socialMedia/X.svg",
             "link": ""
         },
         {
             "alt": "LinkedIn",
-            "image": "/images/socialMedia/LinkedIn.png",
+            "image": "/images/socialMedia/LinkedIn.svg",
             "link": ""
         },
         {
             "alt": "github",
-            "image": "/images/socialMedia/github.png",
+            "image": "/images/socialMedia/github.svg",
             "link": ""
         },
         {
             "alt": "cv",
-            "image": "/images/socialMedia/cv.png",
+            "image": "/images/socialMedia/cv.svg",
             "link": ""
         }
     ]

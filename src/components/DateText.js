@@ -12,7 +12,7 @@ const DateText = (props) => {
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                         <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>
                     </div>
-                    <p className="text-sm xl:text-lg 3xl:text-xl min-w-[70%]">{n.text}</p>
+                    <p className="text-sm xl:text-lg 3xl:text-xl min-w-[60%] lg:min-w-[60%]">{n.text}</p>
                 </div>)}
             {props.data.slice(3, 4).map(n =>
                 <div className={`${props.showAll ? 'text-gray-dark' : 'text-gray'} flex items-start`}>
@@ -21,7 +21,7 @@ const DateText = (props) => {
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                         {props.showAll && <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                     </div>
-                    <p className="text-sm xl:text-lg 3xl:text-xl min-w-[70%]">{n.text}</p>
+                    <p className="text-sm xl:text-lg 3xl:text-xl min-w-[60%]">{n.text}</p>
                 </div>)}
             <div className={`${props.showAll ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in duration-700`}>
                 {props.showAll && props.data.slice(4).map((n, index) =>
@@ -31,7 +31,7 @@ const DateText = (props) => {
                             <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                             {props.data.length !== index + 5 && <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                         </div>
-                        <p className="text-sm xl:text-lg 3xl:text-xl min-w-[70%]">{n.text}</p>
+                        <p className="text-sm xl:text-lg 3xl:text-xl min-w-[60%] lg:min-w-[60%]">{n.text}</p>
                     </div>)}
             </div>
         </div>

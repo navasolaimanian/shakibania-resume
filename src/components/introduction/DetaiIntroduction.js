@@ -3,14 +3,14 @@ import React from 'react';
 import Image from 'next/image';
 import EducationButton from '../EducationButton';
 import Educations from '../Educations';
-import rectangle32 from '../../../public/images/design/Rectangle 32.png';
+import introductionRectangle1 from '../../../public/images/design/introductionRectangle1.svg';
 import { useState } from 'react';
 
 const DetaiIntroduction = (props) => {
     const [showEducation, setShowEducation] = useState(false);
     return (
         <div className="relative">
-            <Image src={rectangle32} className="absolute -top-32 hidden md:block" />
+            <Image src={introductionRectangle1} className="absolute -top-32 hidden md:block" />
             <div className="mx-6 md:ml-16 xl:ml-28 2xl:ml-40 mb-32 3xl:mb-40 mt-[3rem] lg:mt-[5rem] 3xl:mt-[17rem]">
                 <p className="text-gray text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-medium mb-3 xl:mb-4 hidden md:block">Hello! I’m</p>
                 <h1 className="text-gray-dark text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-black hidden md:block">Hossein  Shakibania</h1>

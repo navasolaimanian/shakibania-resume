@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Cart from './Cart';
-import towRecrangle2 from '../../public/images/design/2Recrangle 2.png';
-import Recrangle66 from '../../public/images/design/Rectangle 66.png';
-import Recrangle67 from '../../public/images/design/Rectangle 67.png';
+import talksRectangle1 from '../../public/images/design/talksRectangle1.svg';
+import talksRectangle2 from '../../public/images/design/talksRectangle2.svg';
+import talksRectangle3 from '../../public/images/design/talksRectangle3.svg';
 
 
 
@@ -13,9 +13,9 @@ const TalksPresentations = (props) => {
     
   return (
       <div className="relative py-12">
-      <Image src={towRecrangle2} className="absolute left-0 top-[20%] -z-10" />
-      <Image src={Recrangle66} className="absolute right-0 top-[50%] -z-10" />
-      <Image src={Recrangle67} className="absolute right-8 top-[63%] -z-10" />
+      <Image src={talksRectangle1} className="absolute left-0 top-[20%] -z-10" />
+      <Image src={talksRectangle2} className="absolute right-0 top-[50%] -z-10" />
+      <Image src={talksRectangle3} className="absolute right-8 top-[70%] -z-10" />
       <div className="">
         <div className="pl-10 xl:pl-20 2xl:pl-28 3xl:pl-44 pt-8">
           <p className="text-gray-dark text-2xl xl:text-3xl mb-3">Talks & Presentations</p>

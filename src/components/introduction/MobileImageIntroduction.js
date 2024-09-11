@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import rectangle69 from '../../../public/images/design/Rectangle 69.png';
-import rectangle71 from '../../../public/images/design/Rectangle 71.png';
+import mobileintroductionRectangle1 from '../../../public/images/design/mobileintroductionRectangle1.svg';
+import mobileintroductionRectangle2 from '../../../public/images/design/mobileintroductionRectangle2.svg';
 import person from '../../../public/images/person.png';
 import { getData } from '../../../lib/getData';
 import Link from 'next/link';
@@ -10,9 +10,9 @@ const MobileIntroduction = () => {
 
   return (
     <div className="md:hidden relative">
-      <Image src={rectangle71} className="absolute left-0 top-3" />
+      <Image src={mobileintroductionRectangle2} className="absolute left-0 top-3" />
       <div className="relative">
-        <Image src={rectangle69} className="absolute right-0 -top-10" />
+        <Image src={mobileintroductionRectangle1} className="absolute right-0 -top-10" />
         <Image src={person} className="absolute right-4 top-12 w-36 h-36" />
         <div className="absolute top-[4.5rem] right-[10.5rem]">
           <p className="text-[#BDC7D1] text-xs">Hello! I’m</p>

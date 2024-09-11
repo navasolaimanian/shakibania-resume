@@ -11,11 +11,11 @@ const Cart = (props) => {
   const [isHover, setIsHover] = useState(false);
   console.log(props.publication.links);
   return (
-    <div className="shadow-md flex mb-8 w-[90%] xl:w-[70%] bg-white p-4 xl:p-6 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-      <div className="w-[35%] xl:w-[30%]">
-        <Image src={props.publication.image} className="p-1" alt="alt" width={300} height={200} />
+    <div className="shadow-md grid self-center sm:grid-cols-5 lg:grid-cols-4 mb-8 w-[90%] xl:w-[70%] bg-[#F4F7FA] sm:bg-white p-4 xl:p-6 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+      <div className="w-full sm:col-span-2 lg:col-span-1">
+        <Image src={props.publication.image} className="p-1 h-full m-auto" alt="alt" width={300} height={200} />
       </div>
-      <div className="p-5">
+      <div className="p-5 sm:col-span-3">
         <h1 className="xl:text-lg 2xl:text-xl text-[#7C7D81]">{props.publication.title}</h1>
         <p className="text-xs text-[#9EA8AF] bg-[#DDEAF7] mt-2 inline py-1 px-2 rounded-lg">{props.publication.journal}</p>
         <p className="text-[#A8AFB4] text-xs mt-2">{props.publication.author}</p>

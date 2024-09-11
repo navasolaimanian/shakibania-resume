@@ -2,7 +2,7 @@
 import React from 'react';
 import Cart from './Cart';
 import Image from 'next/image';
-import rectangle55 from '../../public/images/design/Rectangle 55.png';
+import publicationRectangle from '../../public/images/design/publicationRectangle.svg';
 import { useState } from 'react';
 
 
@@ -11,7 +11,7 @@ const Publications = (props) => {
 
   return (
     <div className="relative">
-      <Image src={rectangle55} className="absolute left-0 top-[50%] -z-10" />
+      <Image src={publicationRectangle} className="absolute left-0 top-[50%] -z-10" />
       <div className="">
         <div className="pl-10 xl:pl-20 2xl:pl-28 3xl:pl-44 pt-8">
           <p className="text-gray-dark text-2xl xl:text-3xl mb-3">Publications</p>
