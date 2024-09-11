@@ -7,8 +7,8 @@ import { useState } from 'react';
 const Header = () => {
     const [showLeftBar, setShowLeftBar] = useState(false);
     return (
-        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-16 lg:px-32 pt-6 pb-4'>
-            <div className='text-3xl 2xl:text-4xl'>
+        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-10 lg:px-32 pt-6 pb-4'>
+            <div className='text-2xl xl:text-3xl 2xl:text-4xl'>
                 H o s s
             </div>
             <ul className='hidden md:flex [&>*]:pl-8'>
@@ -18,7 +18,7 @@ const Header = () => {
                 <li>Experience</li>
             </ul>
             <button className="md:hidden" onClick={() => setShowLeftBar(!showLeftBar)}>
-                <IoMenu className="h-10 w-10" />
+                <IoMenu className="h-8 w-8" />
             </button>
         </div>
     );
