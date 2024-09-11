@@ -10,7 +10,7 @@ const Publications = (props) => {
   const [showAllPublications, setShowAllPublications] = useState(false);
 
   return (
-    <div className="relative">
+    <div id="publicationSection" className="relative">
       <Image src={publicationRectangle} className="absolute left-0 top-[50%] -z-10" />
       <div className="">
         <div className="pl-10 xl:pl-20 2xl:pl-28 3xl:pl-44 pt-8">
