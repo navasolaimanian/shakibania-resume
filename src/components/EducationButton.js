@@ -3,6 +3,7 @@ import React from 'react'
 import rightArrow from '../../public/images/icons/rightArrow.svg'
 import downArrow from '../../public/images/icons/downArrow.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const EducationButton = (props) => {

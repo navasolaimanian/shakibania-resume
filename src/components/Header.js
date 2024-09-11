@@ -13,7 +13,7 @@ const Header = () => {
                 H o s s
             </div>
             <ul className='hidden md:flex [&>*]:pl-8'>
-                <Link href="#">
+                <Link href="#aboutSection">
                     <li className="hover:text-[#B1C7DE] border-b-2 border-b-transparent hover:border-b-[#B1C7DE]">About</li>
                 </Link>
                 <Link href="#newsSection">
@@ -22,7 +22,7 @@ const Header = () => {
                 <Link href="#publicationSection">
                     <li className="hover:text-[#B1C7DE] border-b-2 border-b-transparent hover:border-b-[#B1C7DE]">Publications</li>
                 </Link>
-                <Link href="#newsSection">
+                <Link href="#experienceSection">
                     <li className="hover:text-[#B1C7DE] border-b-2 border-b-transparent hover:border-b-[#B1C7DE]">Experience</li>
                 </Link>
             </ul>

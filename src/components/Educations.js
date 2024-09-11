@@ -5,7 +5,7 @@ import buali from '../../public/images/buali.png'
 const Educations = (props) => {
     console.log(props.index, props.length)
     return (
-        <>
+        <div>
             {props.showEducation &&
                 <div className="my-3 md:ml-5 lg:ml-10 xl:ml-20 flex">
                     <Image width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
@@ -30,7 +30,8 @@ const Educations = (props) => {
                     </div>
                 </div>
             }
-        </>
+            {/* <div id="endOfEducations"></div> */}
+        </div>
     )
 }
 
