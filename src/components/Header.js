@@ -8,7 +8,7 @@ const Header = () => {
     const [showLeftBar, setShowLeftBar] = useState(false);
     
     return (
-        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-10 lg:px-32 pt-6 pb-4'>
+        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-5 md:px-10 lg:px-32 pt-6 pb-4'>
             <div className='text-[#B1C7DE] text-2xl xl:text-3xl 2xl:text-4xl'>
                 H o s s
             </div>

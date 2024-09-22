@@ -13,11 +13,11 @@ const TalksPresentations = (props) => {
     
   return (
       <div className="relative py-12">
-      <Image src={talksRectangle1} className="absolute left-0 top-[20%] -z-10" />
-      <Image src={talksRectangle2} className="absolute right-0 top-[50%] -z-10" />
-      <Image src={talksRectangle3} className="absolute right-8 top-[70%] -z-10" />
-      <div className="">
-        <div className="pl-10 xl:pl-20 2xl:pl-28 3xl:pl-44 pt-8">
+      <Image src={talksRectangle1} className="absolute left-0 top-[20%] -z-10 hidden lg:block" />
+      <Image src={talksRectangle2} className="absolute right-0 top-[50%] -z-10 hidden lg:block" />
+      <Image src={talksRectangle3} className="absolute right-8 top-[70%] -z-10 hidden lg:block" />
+      <div className="container m-auto">
+        <div className="pl-5 md:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-44 pt-8">
           <p className="text-gray-dark text-2xl xl:text-3xl mb-3">Talks & Presentations</p>
         </div>
         <div className="flex flex-col items-center justify-center pt-8 xl:pt-16">

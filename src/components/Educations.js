@@ -7,7 +7,7 @@ const Educations = (props) => {
     return (
         <div>
             {props.showEducation &&
-                <div className="my-3 md:ml-5 lg:ml-10 xl:ml-20 flex">
+                <div className="py-3 md:ml-5 lg:ml-10 xl:ml-20 flex">
                     <Image width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
                     {/* <span className="w-10 h-10 bg-white rounded-full"></span> */}
                     <div className="text-gray-dark flex">
