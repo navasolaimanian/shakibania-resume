@@ -16,7 +16,7 @@ const TalksPresentations = (props) => {
       <Image src={talksRectangle1} className="absolute left-0 top-[20%] -z-10 hidden lg:block" />
       <Image src={talksRectangle2} className="absolute right-0 top-[50%] -z-10 hidden lg:block" />
       <Image src={talksRectangle3} className="absolute right-8 top-[70%] -z-10 hidden lg:block" />
-      <div className="container m-auto">
+      <div className="container m-auto px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-7 3xl:pt-8">
         <div className="">
           <p className="text-gray-dark  text-xl xl:text-2xl 2xl:text-3xl mb-3">Talks & Presentations</p>
         </div>

@@ -9,16 +9,16 @@ const MobileIntroduction = () => {
   const data = getData('mobileSocialMedia.json');
 
   return (
-    <div className="md:hidden relative">
-      <Image src={mobileintroductionRectangle2} className="absolute left-0 top-3" />
-      <div className="relative">
-        <Image src={mobileintroductionRectangle1} className="absolute right-0 -top-10" />
-        <Image src={person} className="absolute right-4 top-12 w-36 h-36" />
-        <div className="absolute top-[4.5rem] right-[10.5rem]">
+    <div className="md:hidden">
+      <Image src={mobileintroductionRectangle2} className="absolute left-0 top-20" />
+      <div className="">
+        <Image src={mobileintroductionRectangle1} className="absolute right-0 top-6" />
+        <Image src={person} className="absolute right-4 top-24 w-36 h-36" />
+        <div className="absolute top-[8.5rem] right-[10.5rem]">
           <p className="text-[#BDC7D1] text-xs">Hello! I’m</p>
           <p className="text-[#D6E2EF] font-medium">Hossein  Shakibania</p>
         </div>
-        <ul className="absolute top-[9rem] right-[10rem] flex items-center w-fit rounded-lg [&>*]:mx-1 px-1 3xl:mt-6 bg-[#D5DADE]">
+        <ul className="absolute top-[13rem] right-[10rem] flex items-center w-fit rounded-lg [&>*]:mx-1 px-1 3xl:mt-6 bg-[#D5DADE]">
           {data.socialMedias.map(socialMedia =>
             <li>
               <Link href={socialMedia.link}>
