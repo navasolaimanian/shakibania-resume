@@ -1,76 +1,69 @@
 {
-    "TalksPresentations": [
-      {
-          "title": "Dual branch deep learning network for detection and stage grading of diabetic retinopathy",
-          "abstract": "A deep learning approach to diabetic retinopathy detection and grading. A dual-branch model is trained on a selectively merged and augmented dataset from public sources that significantly enhanced the classification outcomes.",
-          "journal": "Biomedical Signal Processing and Control",
-          "year": "2024",
-          "author": "H. Shakibania | S. Raoufi | B. Pourafkham | H. Khotanlou | M. Mansoorizadeh",
-          "image": "/images/TalksPresentations/GrahamHill_2011U-embed 1.png",
-          "url": "https://doi.org/10.1016/j.bspc.2024.106168",
-          "bibtex": "data/bibTex/DR.json",
-          "pdf": "https://arxiv.org/abs/2308.09945",
-          "code": "",
-          "website": "",
-          "youtube": "https://arxiv.org/abs/2308.0994"
-        },
-        {
-          "title": "CDAN: Convolutional Dense Attention-guided Network for Low-light Image Enhancement",
-          "abstract": "An autoencoder-based model for enhancing low-light images across challenging lighting conditions.",
-          "journal": "arXiv",
-          "year": "2023",
-          "author": "H. Shakibania | S. Raoufi | H. Khotanlou",
-          "image": "/images/TalksPresentations/brain.jpg",
-          "url": "https://arxiv.org/abs/2308.12902",
-          "bibtex": "data/bibTex/CDAN.json",
-          "pdf": "https://arxiv.org/abs/2308.12902",
-          "code": "https://github.com/SinaRaoufi/CDAN",
-          "website": "",
-          "youtube": ""
-        },
-        {
-          "title": "Farsi Text Detection and Localization in Videos and Images",
-          "abstract": "A new framework for the Farsi text detection and localization using the up-to-date real-time object detection framework YOLOv5 in videos and images.",
-          "journal": "9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
-          "year": "2022",
-          "author": "M. Mosannafat | f. Taherinezhad | H. Khotanlou | E. Alighardash",
-          "image": "/images/publications/article.png",
-          "url": "https://ieeexplore.ieee.org/abstract/document/9756472",
-          "bibtex": "data/bibTex/farsi_text.json",
-          "pdf": "",
-          "code": "",
-          "website": "",
-          "youtube": ""
-        },
-        {
-          "title": "Brain tumor classification using deep convolutional autoencoder-based neural network: multi-task approach",
-          "abstract": "This paper proposes a Convolutional Neural Network (CNN) method utilizing a Convolutional Auto-Encoder Neural Network (CANN) to diagnose and classify brain tumors in MRI images into 5 categories, achieving high accuracy rates up to 99.3%.",
-          "journal": "Multimedia Tools and Applications",
-          "year": "2021",
-          "author": "F. BashirGonbadi | H. Khotanlou",
-          "image": "/images/publications/article.png",
-          "url": "https://link.springer.com/article/10.1007/s11042-021-10637-1",
-          "bibtex": "data/bibTex/brain.json",
-          "pdf": "",
-          "code": "",
-          "website": "",
-          "youtube": ""
-        },
-        {
-          "title": "Point-PlaneNet: Plane kernel based convolutional neural network for point clouds analysis",
-          "abstract": "This paper introduces Point-PlaneNet, a novel convolutional neural network utilizing PointConv to extract local geometric features from raw point clouds without transforming them to images or volumes, showing promising results in various 3D data analysis tasks.",
-          "journal": "Digital Signal Processing",
-          "year": "2020",
-          "author": "SMM. Peyghambarzadeh | F. Azizmalayeri | H. Khotanlou | A. Salarpour",
-          "image": "/images/publications/article.png",
-          "url": "https://www.sciencedirect.com/science/article/pii/S1051200419301873",
-          "bibtex": "data/bibTex/point.json",
-          "pdf": "",
-          "code": "https://github.com/moeinp70/Point-Planenet",
-          "website": "",
-          "youtube": ""
-        }
-      ]
-    
-  }
-  
+  "TalksPresentations": [
+    {
+      "title": "Dual branch deep learning network for detection and stage grading of diabetic retinopathy",
+      "abstract": "A deep learning approach to diabetic retinopathy detection and grading. A dual-branch model is trained on a selectively merged and augmented dataset from public sources that significantly enhanced the classification outcomes.",
+      "journal": "Biomedical Signal Processing and Control",
+      "year": "2024",
+      "image": "/images/publications/article.svg",
+      "url": "https://doi.org/10.1016/j.bspc.2024.106168",
+      "bibtex": "data/bibTex/DR.json",
+      "pdf": "https://arxiv.org/abs/2308.09945",
+      "code": "",
+      "website": "",
+      "youtube": "https://arxiv.org/abs/2308.0994"
+    },
+    {
+      "title": "CDAN: Convolutional Dense Attention-guided Network for Low-light Image Enhancement",
+      "abstract": "An autoencoder-based model for enhancing low-light images across challenging lighting conditions.",
+      "journal": "arXiv",
+      "year": "2023",
+      "image": "/images/publications/article.svg",
+      "url": "https://arxiv.org/abs/2308.12902",
+      "bibtex": "data/bibTex/CDAN.json",
+      "pdf": "https://arxiv.org/abs/2308.12902",
+      "code": "https://github.com/SinaRaoufi/CDAN",
+      "website": "",
+      "youtube": ""
+    },
+    {
+      "title": "Farsi Text Detection and Localization in Videos and Images",
+      "abstract": "A new framework for the Farsi text detection and localization using the up-to-date real-time object detection framework YOLOv5 in videos and images.",
+      "journal": "9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
+      "year": "2022",
+      "image": "/images/publications/article.svg",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9756472",
+      "bibtex": "data/bibTex/farsi_text.json",
+      "pdf": "",
+      "code": "",
+      "website": "",
+      "youtube": ""
+    },
+    {
+      "title": "Brain tumor classification using deep convolutional autoencoder-based neural network: multi-task approach",
+      "abstract": "This paper proposes a Convolutional Neural Network (CNN) method utilizing a Convolutional Auto-Encoder Neural Network (CANN) to diagnose and classify brain tumors in MRI images into 5 categories, achieving high accuracy rates up to 99.3%.",
+      "journal": "Multimedia Tools and Applications",
+      "year": "2021",
+      "image": "/images/publications/article.svg",
+      "url": "https://link.springer.com/article/10.1007/s11042-021-10637-1",
+      "bibtex": "data/bibTex/brain.json",
+      "pdf": "",
+      "code": "",
+      "website": "",
+      "youtube": ""
+    },
+    {
+      "title": "Point-PlaneNet: Plane kernel based convolutional neural network for point clouds analysis",
+      "abstract": "This paper introduces Point-PlaneNet, a novel convolutional neural network utilizing PointConv to extract local geometric features from raw point clouds without transforming them to images or volumes, showing promising results in various 3D data analysis tasks.",
+      "journal": "Digital Signal Processing",
+      "year": "2020",
+      "image": "/images/publications/article.svg",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1051200419301873",
+      "bibtex": "data/bibTex/point.json",
+      "pdf": "",
+      "code": "https://github.com/moeinp70/Point-Planenet",
+      "website": "",
+      "youtube": ""
+    }
+  ]
+}

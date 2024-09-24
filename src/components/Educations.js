@@ -6,22 +6,24 @@ const Educations = (props) => {
     console.log(props.index, props.length)
     return (
         <div>
+            <div id="endOfEducations" className="scroll-mt-48"></div>
+
             {props.showEducation &&
-                <div className="py-3 md:ml-5 lg:ml-10 xl:ml-20 flex">
+                <div className="md:ml-5 lg:ml-10 xl:ml-20 flex">
                     <Image width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
                     {/* <span className="w-10 h-10 bg-white rounded-full"></span> */}
                     <div className="text-gray-dark flex">
-                        <div className="pt-3">
-                            <div className="w-2 h-2 mx-3 lg:mx-7 bg-[#BCC0C2] rounded-full"></div>
+                        <div className="">
+                            <div className="w-2 h-2 mx-3 lg:mx-7 bg-[#BCC0C2] rounded-full my-3"></div>
                             {props.index + 1 !== props.length &&
-                                <div className="w-1 h-28 mx-[0.9rem] lg:mx-[1.85rem] rounded-lg bg-[#D7E1EB]"></div>
+                                <div className="w-1 h-28 mx-[0.88rem] lg:mx-[1.85rem] rounded-lg bg-[#D7E1EB]"></div>
                             }
                         </div>
                         <div className="lg:w-72">
-                            <p className="text-lg lg:text-xl">{props.educationData.university}</p>
-                            <p>{props.educationData.degree}</p>
-                            <p>{props.educationData.date}</p>
-                            <ul className="list-disc ml-8">
+                            <p className="text-base md:text-lg lg:text-xl">{props.educationData.university}</p>
+                            <p className="text-sm md:text-base">{props.educationData.degree}</p>
+                            <p className="text-sm md:text-base">{props.educationData.date}</p>
+                            <ul className="text-sm md:text-base list-disc ml-8">
                                 {props.educationData.details.map((detail, index) =>
                                     <li key={index}>{detail}</li>
                                 )}
@@ -30,7 +32,6 @@ const Educations = (props) => {
                     </div>
                 </div>
             }
-            {/* <div id="endOfEducations"></div> */}
         </div>
     )
 }

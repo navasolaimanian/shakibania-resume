@@ -2,13 +2,15 @@
 import { IoMenu } from "react-icons/io5";
 import { useState } from 'react';
 import Link from 'next/link';
+import menu from '../../public/images/icons/menu.svg'
+import Image from "next/image";
 
 
 const Header = () => {
     const [showLeftBar, setShowLeftBar] = useState(false);
     
     return (
-        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-5 md:px-10 lg:px-32 pt-6 pb-4'>
+        <div className='bg-black fixed w-full z-10 flex justify-between items-center px-7 sm:px-10 lg:px-32 pt-6 pb-4'>
             <div className='text-[#B1C7DE] text-2xl xl:text-3xl 2xl:text-4xl'>
                 H o s s
             </div>
@@ -27,7 +29,7 @@ const Header = () => {
                 </Link>
             </ul>
             <button className="md:hidden" onClick={() => setShowLeftBar(!showLeftBar)}>
-                <IoMenu className="h-8 w-8" />
+                <Image src={menu} />
             </button>
         </div>
     );
