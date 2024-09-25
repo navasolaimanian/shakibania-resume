@@ -3,14 +3,13 @@ import React from 'react'
 import buali from '../../public/images/buali.png'
 
 const Educations = (props) => {
-    console.log(props.index, props.length)
     return (
         <div>
             <div id="endOfEducations" className="scroll-mt-48"></div>
 
             {props.showEducation &&
                 <div className="md:ml-5 lg:ml-10 xl:ml-20 flex">
-                    <Image width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
+                    <Image alt="" width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
                     {/* <span className="w-10 h-10 bg-white rounded-full"></span> */}
                     <div className="text-gray-dark flex">
                         <div className="">

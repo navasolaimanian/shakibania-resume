@@ -5,8 +5,8 @@ const DateText = (props) => {
 
     return (
         <div className="my-6 md:my-12 pl-1 xl:pl-10 2xl:pl-14 pt-4 pr-2 3:pt-10">
-            {props.data.slice(0, 3).map(n =>
-                <div className="text-gray-dark flex items-start">
+            {props.data.slice(0, 3).map((n, index) =>
+                <div key={index} className="text-gray-dark flex items-start">
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                     <div className="mt-[0.7rem]">
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
@@ -14,8 +14,8 @@ const DateText = (props) => {
                     </div>
                     <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
                 </div>)}
-            {props.data.slice(3, 4).map(n =>
-                <div className={`${props.showAll ? 'text-gray-dark' : 'text-gray'} flex items-start`}>
+            {props.data.slice(3, 4).map((n, index) =>
+                <div key={index} className={`${props.showAll ? 'text-gray-dark' : 'text-gray'} flex items-start scroll-mt-48`}>
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                     <div className="mt-1">
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
@@ -24,6 +24,7 @@ const DateText = (props) => {
                     <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
                 </div>)}
             {/* {props.showLess &&  */}
+
             <div className={`${props.showAll ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in duration-700`}>
                 {props.showAll && props.data.slice(4).map((n, index) =>
                     <div key={index} className={`text-gray-dark flex items-start`}>

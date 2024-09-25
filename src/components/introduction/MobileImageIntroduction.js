@@ -10,10 +10,10 @@ const MobileIntroduction = () => {
 
   return (
     <div className="md:hidden">
-      <Image src={mobileintroductionRectangle2} className="absolute left-0 top-20" />
+      <Image alt="" src={mobileintroductionRectangle2} className="absolute left-0 top-20" />
       <div className="">
-        <Image src={mobileintroductionRectangle1} className="absolute right-0 top-6" />
-        <Image src={person} className="absolute right-4 top-24 w-36 h-36" />
+        <Image alt="" src={mobileintroductionRectangle1} className="absolute right-0 top-6" />
+        <Image alt="" src={person} className="absolute right-4 top-24 w-36 h-36" />
         <div className="absolute top-[8.5rem] right-[10.5rem]">
           <p className="text-[#BDC7D1] text-xs">Hello! I’m</p>
           <p className="text-[#D6E2EF] font-medium">Hossein  Shakibania</p>
@@ -25,8 +25,10 @@ const MobileIntroduction = () => {
                 <Image
                   alt={socialMedia.alt}
                   src={socialMedia.image}
-                  width={18}
-                  height={18}
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
                 />
               </Link>
             </li>
