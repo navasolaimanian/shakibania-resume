@@ -43,16 +43,20 @@ const Header = () => {
             {/* Desktop Menu */}
             <ul className="hidden md:flex space-x-8">
                 <Link href="#aboutSection">
-                    <li className={activeSection === 'aboutSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent hover:border-b-[#B1C7DE] text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>About</li>
+                    <li className={activeSection === 'aboutSection' ? 'text-[#B1C7DE]' : 'text-white hover:text-[#B1C7DE] transition-all duration-700'}>About</li>
+                    <div className={`w-full h-[3px] rounded-lg transition-all duration-700 ${activeSection === 'aboutSection' ? 'bg-[#B1C7DE]' : 'bg-transparent' }`}></div>
                 </Link>
                 <Link href="#newsSection">
-                    <li className={activeSection === 'newsSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'vborder-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>News</li>
+                    <li className={activeSection === 'newsSection' ? 'text-[#B1C7DE]' : 'text-white hover:text-[#B1C7DE] transition-all duration-700'}>News</li>
+                    <div className={`w-full h-[3px] rounded-lg transition-all duration-700 ${activeSection === 'newsSection' ? 'bg-[#B1C7DE]' : 'bg-transparent' }`}></div>
                 </Link>
                 <Link href="#publicationSection">
-                    <li className={activeSection === 'publicationSection' ? 'text-[#B1C7DE] border-b-[3px]  border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>Publications</li>
+                    <li className={activeSection === 'publicationSection' ? 'text-[#B1C7DE] ' : 'text-white hover:text-[#B1C7DE] transition-all duration-700'}>Publications</li>
+                    <div className={`w-full h-[3px] rounded-lg transition-all duration-700 ${activeSection === 'publicationSection' ? 'bg-[#B1C7DE]' : 'bg-transparent' }`}></div>
                 </Link>
                 <Link href="#experienceSection">
-                    <li className={activeSection === 'experienceSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>Experience</li>
+                    <li className={activeSection === 'experienceSection' ? 'text-[#B1C7DE]' : 'text-white hover:text-[#B1C7DE] transition-all duration-700'}>Experience</li>
+                    <div className={`w-full h-[3px] rounded-lg transition-all duration-700 ${activeSection === 'experienceSection' ? 'bg-[#B1C7DE]' : 'bg-transparent' }`}></div>
                 </Link>
             </ul>
             <button className="md:hidden" onClick={() => setShowLeftBar(!showLeftBar)}>
