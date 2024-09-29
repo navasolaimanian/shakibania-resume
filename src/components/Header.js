@@ -41,25 +41,23 @@ const Header = () => {
                 H o s s
             </div>
             {/* Desktop Menu */}
-            <ul className="hidden md:flex space-x-8 transition-colors duration-500">
+            <ul className="hidden md:flex space-x-8">
                 <Link href="#aboutSection">
-                    <li className={activeSection === 'aboutSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent hover:border-b-[#B1C7DE] text-white hover:text-[#B1C7DE]'}>About</li>
+                    <li className={activeSection === 'aboutSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent hover:border-b-[#B1C7DE] text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>About</li>
                 </Link>
                 <Link href="#newsSection">
-                    <li className={activeSection === 'newsSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE]'}>News</li>
+                    <li className={activeSection === 'newsSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'vborder-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>News</li>
                 </Link>
                 <Link href="#publicationSection">
-                    <li className={activeSection === 'publicationSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE]'}>Publications</li>
+                    <li className={activeSection === 'publicationSection' ? 'text-[#B1C7DE] border-b-[3px]  border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>Publications</li>
                 </Link>
                 <Link href="#experienceSection">
-                    <li className={activeSection === 'experienceSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE]'}>Experience</li>
+                    <li className={activeSection === 'experienceSection' ? 'text-[#B1C7DE] border-b-[3px] border-b-[#B1C7DE]' : 'border-b-transparent text-white hover:text-[#B1C7DE] transition-all duration-75 ease-in'}>Experience</li>
                 </Link>
             </ul>
-            {/* Mobile Menu Button */}
             <button className="md:hidden" onClick={() => setShowLeftBar(!showLeftBar)}>
                 <Image alt="menu" src={menu} />
             </button>
-            {/* Mobile Menu */}
             {showLeftBar && (
                 <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center py-4 space-y-4">
                     <Link href="#aboutSection" onClick={() => setShowLeftBar(false)}>
