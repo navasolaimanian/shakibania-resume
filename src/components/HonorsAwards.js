@@ -38,7 +38,7 @@ const HonorsAwards = (props) => {
     <div id="HonorsAwardsSection" className="bg-[#F7F2EA] relative pb-10 scroll-mt-48">
       <Image alt="" src={awardsRectangle1} className="absolute right-0 -top-44" />
       <div className="container m-auto">
-        <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-7 3xl:pt-8">
+        <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">
           <h1 className="text-gray-dark text-2xl 2xl:text-3xl">Honors & Awards</h1>
           <DateText showLess={hasReachedElement} showAll={showAllAwards} data={props.data.awards} button={'see all Honors & Awards'} />
         </div>

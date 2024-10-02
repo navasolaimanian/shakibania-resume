@@ -6,6 +6,7 @@ import Publications from "@/components/Publications";
 import HonorsAwards from "@/components/HonorsAwards";
 import Experience from "@/components/Experience";
 import TalksPresentations from "@/components/TalksPresentations";
+import Research from "@/components/Research";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <div className="">
       <Introduction />
+      <Research />
       <News data={news} />
       <Publications data={publications} />
       <Experience />

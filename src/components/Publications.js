@@ -17,7 +17,7 @@ const Publications = (props) => {
     <div id="publicationSection" className="relative scroll-mt-48">
       {showModal && <Modal title={cartTitle} setShowModal={setShowModal} data={modalData} />}
       <Image alt="" src={publicationRectangle} className="absolute left-0 top-96 -z-10 hidden lg:block" />
-      <div className="container m-auto px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-7 3xl:pt-8">
+      <div className="container m-auto px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">
         <div className="">
           <p className="text-gray-dark  text-xl xl:text-2xl 2xl:text-3xl mb-3">Publications</p>
           <p className="text-[#606060] text-sm ">For a complete list of my research works, please look up my google scholar.</p>

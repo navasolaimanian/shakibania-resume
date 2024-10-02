@@ -12,11 +12,11 @@ const TalksPresentations = (props) => {
   const [showAllTalksPresentations, setShowAllTalksPresentations] = useState(false);
 
   return (
-    <div id="publicationSection" className="relative scroll-mt-48 px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-6 3xl:pt-8">
+    <div id="publicationSection" className="relative scroll-mt-48">
       <Image src={talksRectangle1} alt="" className="absolute left-0 top-[20%] -z-10 hidden lg:block" />
       <Image src={talksRectangle2} alt=""  className="absolute right-0 top-[50%] -z-10 hidden lg:block" />
       <Image src={talksRectangle3} alt=""  className="absolute right-8 top-[70%] -z-10 hidden lg:block" />
-      <div className="container m-auto px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-7 3xl:pt-8">
+      <div className="container m-auto px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">
         <div className="">
           <p className="text-gray-dark  text-xl xl:text-2xl 2xl:text-3xl mb-3">Talks & Presentations</p>
         </div>
