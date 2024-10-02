@@ -34,7 +34,21 @@
       ],
       "image": "/images/publications/article.svg",
       "url": "https://doi.org/10.1016/j.bspc.2024.106168",
-      "bibtex": "data/bibTex/DR.json",
+      "bibtex": {
+        "url": "data/bibTex/DR.json",
+        "data": {
+          "@INPROCEEDINGS": "9756472",
+          "author": "Mosannafat, Mobina and Taherinezhad, Fatemeh and Khotanlou, Hassan and Alighardash, Elham",
+          "booktitle": "2022 9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
+          "title": "Farsi Text Detection and Localization in Videos and Image",
+          "year": "2022",
+          "volume": "",
+          "number": "",
+          "pages": "1-6",
+          "keywords": "Location awareness;Training;Visualization;Image recognition;Text recognition;Object detection;Motion pictures;text detection;Farsi (Persian) text;YOLO",
+          "doi": "10.1109/CFIS54774.2022.9756472"
+        }
+      },
       "pdf": "https://arxiv.org/abs/2308.09945",
       "code": "",
       "website": "",
@@ -59,7 +73,21 @@
       ],
       "image": "/images/publications/article.svg",
       "url": "https://arxiv.org/abs/2308.12902",
-      "bibtex": "data/bibTex/CDAN.json",
+      "bibtex": {
+        "url": "data/bibTex/DR.json",
+        "data": {
+          "@INPROCEEDINGS": "9756472",
+          "author": "Mosannafat, Mobina and Taherinezhad, Fatemeh and Khotanlou, Hassan and Alighardash, Elham",
+          "booktitle": "2022 9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
+          "title": "Farsi Text Detection and Localization in Videos and Image",
+          "year": "2022",
+          "volume": "",
+          "number": "",
+          "pages": "1-6",
+          "keywords": "Location awareness;Training;Visualization;Image recognition;Text recognition;Object detection;Motion pictures;text detection;Farsi (Persian) text;YOLO",
+          "doi": "10.1109/CFIS54774.2022.9756472"
+        }
+      },
       "pdf": "https://arxiv.org/abs/2308.12902",
       "code": "https://github.com/SinaRaoufi/CDAN",
       "website": "",
@@ -79,7 +107,21 @@
       ],
       "image": "/images/publications/article.svg",
       "url": "https://ieeexplore.ieee.org/abstract/document/9756472",
-      "bibtex": "data/bibTex/farsi_text.json",
+      "bibtex": {
+        "url": "data/bibTex/DR.json",
+        "data": {
+          "@INPROCEEDINGS": "9756472",
+          "author": "Mosannafat, Mobina and Taherinezhad, Fatemeh and Khotanlou, Hassan and Alighardash, Elham",
+          "booktitle": "2022 9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
+          "title": "Farsi Text Detection and Localization in Videos and Image",
+          "year": "2022",
+          "volume": "",
+          "number": "",
+          "pages": "1-6",
+          "keywords": "Location awareness;Training;Visualization;Image recognition;Text recognition;Object detection;Motion pictures;text detection;Farsi (Persian) text;YOLO",
+          "doi": "10.1109/CFIS54774.2022.9756472"
+        }
+      },
       "pdf": "",
       "code": "",
       "website": "",
@@ -119,7 +161,21 @@
       ],
       "image": "/images/publications/article.svg",
       "url": "https://link.springer.com/article/10.1007/s11042-021-10637-1",
-      "bibtex": "data/bibTex/brain.json",
+      "bibtex": {
+        "url": "data/bibTex/DR.json",
+        "data": {
+          "@INPROCEEDINGS": "9756472",
+          "author": "Mosannafat, Mobina and Taherinezhad, Fatemeh and Khotanlou, Hassan and Alighardash, Elham",
+          "booktitle": "2022 9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)",
+          "title": "Farsi Text Detection and Localization in Videos and Image",
+          "year": "2022",
+          "volume": "",
+          "number": "",
+          "pages": "1-6",
+          "keywords": "Location awareness;Training;Visualization;Image recognition;Text recognition;Object detection;Motion pictures;text detection;Farsi (Persian) text;YOLO",
+          "doi": "10.1109/CFIS54774.2022.9756472"
+        }
+      },
       "pdf": "",
       "code": "",
       "website": "",
@@ -159,7 +215,14 @@
       ],
       "image": "/images/publications/article.svg",
       "url": "https://www.sciencedirect.com/science/article/pii/S1051200419301873",
-      "bibtex": "data/bibTex/point.json",
+      "bibtex": {
+        "url": "data/bibTex/DR.json",
+        "data": {
+          "@INPROCEEDINGS": "9756472",
+          "author": "Mosannafat, Mobina and Taherinezhad, Fatemeh and Khotanlou, Hassan and Alighardash, Elham",
+          "booktitle": "2022 9th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)"
+        }
+      },
       "pdf": "",
       "code": "https://github.com/moeinp70/Point-Planenet",
       "website": "",

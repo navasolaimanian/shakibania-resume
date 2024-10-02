@@ -8,6 +8,7 @@ import { FaCode } from "react-icons/fa";
 import Link from 'next/link';
 
 const Cart = (props) => {
+
   return (
     <div className="shadow-4xl hover:shadow-3xl cursor-pointer grid self-center sm:grid-cols-3 mb-4 md:mb-8 w-full md:w-[90%] lg:w-[80%] xl:w-[85%] 2xl:w-[75%] 3xl:w-[70%] bg-[#F4F7FA] sm:bg-white p-5 lg:p-4 rounded-lg lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-[1.01]">
       <div className="w-full col-span-1 sm:col-span-1 p-1 ld:p-0 flex items-center justify-center">
@@ -29,7 +30,11 @@ const Cart = (props) => {
         </div>
         <div className="mt-4 flex [&>*]:mr-2">
           {props.data.bibtex &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button onClick={() => {
+              props.setShowModal(true)
+              props.setModalData(props.data.bibtex.data)
+              props.setCartTitle(props.data.title)
+            }} className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
               <FaQuoteRight />
               <span className="text-xs ml-1">BibTeX</span>
             </button>
