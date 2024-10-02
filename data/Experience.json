@@ -1,0 +1,40 @@
+{
+    "experience": [
+        {
+            "position": "Undergraduate Student Researcher",
+            "laboratory": "Robot Intelligence & Vision Laboratory",
+            "type": "Part-time",
+            "date": "May 2023 - Jun 2024 ",
+            "supervisor": "Prof. Hassan Khotanlou",
+            "information": [
+                "Under the supervision of Prof. Hassan Khotanlou.",
+                "Explored diffusion models, VAE, ViTs for image restoration and enhancement. ...",
+                "Under the supervision of Prof. Hassan Khotanlou.",
+                "Explored diffusion models, VAE, ViTs for image restoration and enhancement. ...",
+                "Under the supervision of Prof. Hassan Khotanlou.",
+                "Explored diffusion models, VAE, ViTs for image restoration and enhancement. ..."
+            ]
+        },
+        {
+            "position": "Undergraduate Student Researcher",
+            "laboratory": "Robot Intelligence & Vision Laboratory",
+            "type": "Part-time",
+            "date": "May 2023 - Jun 2024 ",
+            "supervisor": "Prof. Hassan Khotanlou",
+            "information": [
+                "Under the supervision of Prof. Hassan Khotanlou.",
+                "Explored diffusion models, VAE, ViTs for image restoration and enhancement. ..."
+            ]
+        },
+        {
+            "position": "Undergraduate Student Researcher",
+            "laboratory": "Robot Intelligence & Vision Laboratory",
+            "type": "Part-time",
+            "date": "May 2023 - Jun 2024 ",
+            "information": [
+                "Under the supervision of Prof. Hassan Khotanlou.",
+                "Explored diffusion models, VAE, ViTs for image restoration and enhancement. ..."
+            ]
+        }
+    ]
+}
