@@ -10,14 +10,20 @@ const Modal = (props) => {
     if (keys.length) delete data2[keys[0]];
     const [isCopied, setIsCopied] = useState(false)
 
-    const copyTextHandler = (e) => {
+    const copyTextHandler = async (e) => {
         const text = document.getElementById("bibText")
         console.log(text.innerText)
-        navigator.clipboard.writeText(text.innerText)
-        setIsCopied(true);
-        setTimeout(() => {
-            setIsCopied(false)
-        }, 1000)
+        try {
+           await navigator.clipboard.writeText(text.innerText)
+            setIsCopied(true);
+            setTimeout(() => {
+                setIsCopied(false)
+            }, 1000)
+            // alert('secc')
+            
+        } catch (error) {
+            // alert(error)
+        }
     }
 
     return (

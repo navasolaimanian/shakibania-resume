@@ -7,6 +7,7 @@ import HonorsAwards from "@/components/HonorsAwards";
 import Experience from "@/components/Experience";
 import TalksPresentations from "@/components/TalksPresentations";
 import Research from "@/components/Research";
+import AcademicService from "@/components/AcademicService";
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Experience />
       <HonorsAwards data={awards} />
       <TalksPresentations data={talksPresentations} />
+      <AcademicService />
     </div>
   );
 }

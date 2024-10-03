@@ -3,14 +3,12 @@ import Image from 'next/image';
 import newsRectangle from '../../public/images/design/newsRectangle.svg';
 import { useState } from 'react';
 import DateText from './DateText';
-import { useRef } from 'react';
 import { useEffect } from 'react';
 import Link from 'next/link';
 
 const News = (props) => {
     const [showAllNews, setShowAllNews] = useState(false);
     const [hasReachedElement, setHasReachedElement] = useState(false);
-    const targetRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,11 +42,9 @@ const News = (props) => {
                     <DateText showLess={hasReachedElement} showAll={showAllNews} data={props.data.news} button={'see all News'} />
                 </div>
                 {!showAllNews && 
-                // <Link>
                     <button className="text-xs md:text-sm xl:text-base text-[#748595] mx-auto flex mt-7" onClick={() => setShowAllNews(!showAllNews)}>
                         see all News
                     </button>
-                // </Link>
                 }
             </div>
             <span id="endOfNews"></span>

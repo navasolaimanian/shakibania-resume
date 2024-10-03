@@ -8,7 +8,7 @@ const DateText = (props) => {
             {props.data.slice(0, 3).map((n, index) =>
                 <div key={index} className="text-gray-dark flex items-start">
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
-                    <div className="mt-[0.7rem]">
+                    <div className="mt-[0.4rem] md:mt-[0.7rem]">
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                         <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>
                     </div>

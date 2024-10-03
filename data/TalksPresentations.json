@@ -11,7 +11,8 @@
       "pdf": "https://arxiv.org/abs/2308.09945",
       "code": "",
       "website": "",
-      "youtube": "https://arxiv.org/abs/2308.0994"
+      "youtube": "https://arxiv.org/abs/2308.0994",
+      "slides": "https://github.com/SinaRaoufi/CDAN"
     },
     {
       "title": "CDAN: Convolutional Dense Attention-guided Network for Low-light Image Enhancement",
