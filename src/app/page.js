@@ -23,7 +23,7 @@ export default function Home() {
       <News data={news} />
       <Publications data={publications} />
       <Experience />
-      <HonorsAwards data={awards} />
+      {/* <HonorsAwards data={awards} /> */}
       <TalksPresentations data={talksPresentations} />
       <AcademicService />
     </div>

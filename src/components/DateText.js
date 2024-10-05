@@ -1,11 +1,25 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DateText = (props) => {
+    (props.data.slice(0, 1)[0].text).map((i, index) => {
+        // Render JSX directly
+        if (typeof i === 'string') {
+            return i; // Just return the string as plain text
+        } else if (typeof i === 'object' && i.url && i.word) {
+            return (
+                <Link key={index} href={i.url}>
+                    {i.word}
+                </Link>
+            ); // Return the JSX <Link> element for words with URLs
+        }
+    });
+    console.log( props.data.slice(0, 1)[0].text)
 
     return (
         <div className="my-6 md:my-12 pl-1 xl:pl-10 2xl:pl-14 pt-4 pr-2 3:pt-10">
-            {props.data.slice(0, 3).map((n, index) =>
+            {/* {props.data.slice(0, 3).map((n, index) =>
                 <div key={index} className="text-gray-dark flex items-start">
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                     <div className="mt-[0.4rem] md:mt-[0.7rem]">
@@ -23,7 +37,6 @@ const DateText = (props) => {
                     </div>
                     <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
                 </div>)}
-            {/* {props.showLess &&  */}
 
             <div className={`${props.showAll ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in duration-700`}>
                 {props.showAll && props.data.slice(4).map((n, index) =>
@@ -35,8 +48,7 @@ const DateText = (props) => {
                         </div>
                         <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
                     </div>)}
-            </div>
-             {/* } */}
+            </div> */}
         </div>
     );
 };
