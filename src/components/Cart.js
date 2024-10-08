@@ -22,10 +22,10 @@ const Cart = (props) => {
       <div className="sm:col-span-2 flex flex-col justify-between sm:ml-2">
         <div>
           <div className="flex flex-col sm:flex-col-reverse">
-            <p className="text-xs text-[#C27E63] mt-2 sm:mt-1 inline py-1 font-bold">{props.data.journal}</p>
+            <p className={`text-xs ${!props.author ? "text-[#E3898B]" :"text-[#C27E63]"} mt-2 sm:mt-1 inline py-1 font-bold`}>{props.data.journal}</p>
             <h1 className="font-bold text-sm md:text-base xl:text-lg 2xl:text-xl text-[#7C7D81]">{props.data.title}</h1>
           </div>
-          {props.author && props.author && <div className="text-[#A8AFB4] text-[9px] md:text-xs mt-2">
+          {props.author && <div className="text-[#A8AFB4] text-[9px] md:text-xs mt-2">
             {props.data.authors.map((author, index) => <Link className="hover:text-gray-dark" key={index} href={author.link}> {author.name}{author.co ? "*" : ""} {index + 1 !== props.data.authors.length && <span className="text-[#A8AFB4]"> | </span>}</Link>)}
           </div>}
         </div>
