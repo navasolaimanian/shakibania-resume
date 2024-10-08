@@ -7,6 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiGoogleslides } from "react-icons/si";
 import Link from 'next/link';
+import HuggingFace from '../../public/images/icons/HuggingFace.svg'
 
 const Cart = (props) => {
 
@@ -68,6 +69,12 @@ const Cart = (props) => {
             <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
               <SiGoogleslides />
               <span className="text-xs ml-1">slides</span>
+            </button>
+          }
+          {props.data.slides &&
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+              <Image src={HuggingFace} />
+              <span className="text-xs ml-1">HuggingFace</span>
             </button>
           }
 
