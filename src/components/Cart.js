@@ -73,7 +73,7 @@ const Cart = (props) => {
           }
           {props.data.slides &&
             <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
-              <Image src={HuggingFace} />
+              <Image alt="HuggingFace" src={HuggingFace} />
               <span className="text-xs ml-1">HuggingFace</span>
             </button>
           }

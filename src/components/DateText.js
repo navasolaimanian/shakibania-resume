@@ -1,7 +1,24 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DateText = (props) => {
+    const makeText = (textObject) => {
+        console.log(textObject)
+        return textObject.map((i, index) => {
+            if (typeof i === 'string') {
+                console.log(i)
+                return i; 
+            } else if (typeof i === 'object' && i.url && i.word) {
+                return (
+                    <Link className="text-white" key={index} href={i.url}>
+                        {i.word}
+                    </Link>
+                ); 
+            }
+        });
+    }
+
 
     return (
         <div className="my-6 md:my-12 pl-1 xl:pl-10 2xl:pl-14 pt-4 pr-2 3:pt-10">
@@ -12,7 +29,7 @@ const DateText = (props) => {
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                         <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>
                     </div>
-                    <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
+                    <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                 </div>)}
             {props.data.slice(3, 4).map((n, index) =>
                 <div key={index} className={`${props.showAll ? 'text-gray-dark' : 'text-gray'} flex items-start scroll-mt-48`}>
@@ -21,9 +38,8 @@ const DateText = (props) => {
                         <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                         {props.showAll && <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                     </div>
-                    <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
+                    <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                 </div>)}
-            {/* {props.showLess &&  */}
 
             <div className={`${props.showAll ? 'opacity-100' : 'opacity-0'} transition-opacity ease-in duration-700`}>
                 {props.showAll && props.data.slice(4).map((n, index) =>
@@ -33,10 +49,9 @@ const DateText = (props) => {
                             <div className="w-2 h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
                             {props.data.length !== index + 5 && <div className="w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                         </div>
-                        <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{n.text}</p>
+                        <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                     </div>)}
             </div>
-             {/* } */}
         </div>
     );
 };

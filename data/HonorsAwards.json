@@ -2,35 +2,35 @@
     "awards": [
         {
             "date" : "January 2024",
-            "text" : "Distinguished Undergraduate Student for Academic Excellence (1st Rank), Bu-Ali Sina University"
+            "text" : ["Distinguished Undergraduate Student for Academic Excellence (1st Rank), Bu-Ali Sina University"]
         },
         {
             "date" : "May 2023",
-            "text" :"Our Paper on Detection and Grading Diabetic Retinopathy is Accepted to BSPC! 🥂"
+            "text" :["Our Paper on Detection and Grading Diabetic Retinopathy is Accepted to BSPC! 🥂"]
         },
         {
             "date" : "April 2023",
-            "text" :"somthing new for instance...."
+            "text" :["somthing new for instance...."]
         },
         {
             "date" : "February 2024",
-            "text" :"somthing new for instance...."
+            "text" :["somthing new for instance...."]
         },
         {
             "date" : "April 2024",
-            "text" : "I am Admitted to the MSCS (On Campus) program at Geogia Tech for Fall 2024! 🥳"
+            "text" : ["I am Admitted to the MSCS (On Campus) program at Geogia Tech for Fall 2024! 🥳"]
         },
         {
             "date" : "February 2024",
-            "text" :"Our Paper on Detection and Grading Diabetic Retinopathy is Accepted to BSPC! 🥂"
+            "text" :["Our Paper on Detection and Grading Diabetic Retinopathy is Accepted to BSPC! 🥂"]
         },
         {
             "date" : "February 2024",
-            "text" :"Graduated from Bu-Ali Sina University with a Bachelor's in Computer Engineering! 🎓"
+            "text" :["Graduated from Bu-Ali Sina University with a Bachelor's in Computer Engineering! 🎓"]
         },
         {
             "date" : "February 2024",
-            "text" :"Graduated from Bu-Ali Sina University with a Bachelor's in Computer Engineering! 🎓"
+            "text" :["Graduated from Bu-Ali Sina University with a Bachelor's in Computer Engineering! 🎓"]
         }
     ]
 }
