@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { FaXmark } from "react-icons/fa6";
 import { LuCopy } from "react-icons/lu";
@@ -11,19 +12,29 @@ const Modal = (props) => {
     const [isCopied, setIsCopied] = useState(false)
 
     const copyTextHandler = async (e) => {
-        const text = document.getElementById("bibText")
-        console.log(text.innerText)
+        const element = document.getElementById("bibText")
+
+        const range = document.createRange();
+        range.selectNodeContents(element);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges(); 
+
+        selection.addRange(range);
+
         try {
-           await navigator.clipboard.writeText(text.innerText)
-            setIsCopied(true);
+            const successful = document.execCommand('copy');
+            if (successful) {
+                setIsCopied(true)
+            }
             setTimeout(() => {
                 setIsCopied(false)
-            }, 1000)
-            // alert('secc')
-            
-        } catch (error) {
-            // alert(error)
+            }, 1000);
+        } catch (err) {
+            console.error('Unable to copy', err);
         }
+
+        selection.removeAllRanges();
     }
 
     return (
@@ -32,7 +43,7 @@ const Modal = (props) => {
             <div className="p-4 md:p-6 fixed -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%] w-[90%] lg:w-[80%] md:w-[70%] max-h-[30rem] bg-white z-30 rounded-lg text-black">
                 <div className="flex justify-between md:items-center border-b pb-2 md:pb-4">
                     <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold">{props.title}</div>
-                    <FaXmark className="w-8 md:w-5 h-8 ml-2 md:h-5" onClick={() => props.setShowModal(false)} />
+                    <FaXmark className="w-8 md:w-5 h-8 ml-2 md:h-5 cursor-pointer" onClick={() => props.setShowModal(false)} />
                 </div>
                 <div className="relative font-semibold bg-[#f6f8fa] max-h-[20rem] md:h-[90%] w-full py-2 px-1 md:p-4 mt-2 flex overflow-y-auto">
                     <div id="bibText" className="">

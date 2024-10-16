@@ -4,10 +4,8 @@ import Link from 'next/link';
 
 const DateText = (props) => {
     const makeText = (textObject) => {
-        console.log(textObject)
         return textObject.map((i, index) => {
             if (typeof i === 'string') {
-                console.log(i)
                 return i; 
             } else if (typeof i === 'object' && i.url && i.word) {
                 return (
