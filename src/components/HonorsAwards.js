@@ -12,11 +12,11 @@ const HonorsAwards = (props) => {
 
   useEffect(() => {
       const handleScroll = () => {
-          const targetElement = document.getElementById('endOfTalks'); // Select the element by its id
+          const targetElement = document.getElementById('endOfTalks'); 
 
           if (targetElement) {
-              const elementPosition = targetElement.getBoundingClientRect().top; // Get the element's position relative to viewport
-              const offset = window.innerHeight; // Height of the viewport
+              const elementPosition = targetElement.getBoundingClientRect().top; 
+              const offset = window.innerHeight;
 
               if (elementPosition <= offset) {
                   setHasReachedElement(true);
@@ -30,12 +30,12 @@ const HonorsAwards = (props) => {
       window.addEventListener('scroll', handleScroll);
 
       return () => {
-          window.removeEventListener('scroll', handleScroll); // Clean up listener on component unmount
+          window.removeEventListener('scroll', handleScroll); 
       };
   }, []);
 
   return (
-    <div id="HonorsAwardsSection" className="bg-[#F7F2EA] relative pb-10 scroll-mt-48">
+    <div id="HonorseSection" className="bg-[#F7F2EA] relative pb-10 scroll-mt-32">
       <Image alt="" src={awardsRectangle1} className="absolute right-0 -top-44" />
       <div className="container m-auto">
         <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">

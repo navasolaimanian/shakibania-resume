@@ -6,13 +6,11 @@ import talksRectangle1 from '../../public/images/design/talksRectangle1.svg';
 import talksRectangle2 from '../../public/images/design/talksRectangle2.svg';
 import talksRectangle3 from '../../public/images/design/talksRectangle3.svg';
 
-
-
 const TalksPresentations = (props) => {
   const [showAllTalksPresentations, setShowAllTalksPresentations] = useState(false);
 
   return (
-    <div id="talksPresentationsSection" className="relative scroll-mt-48">
+    <div id="TalkseSection" className="relative scroll-mt-16">
       <Image src={talksRectangle1} alt="" className="absolute left-0 top-[20%] -z-10 hidden lg:block" />
       <Image src={talksRectangle2} alt=""  className="absolute right-0 top-[50%] -z-10 hidden lg:block" />
       <Image src={talksRectangle3} alt=""  className="absolute right-8 top-[70%] -z-10 hidden lg:block" />
@@ -36,7 +34,6 @@ const TalksPresentations = (props) => {
           see all Talks & Presentations
         </button>}
       </div>
-      <div id="endOfTalks"></div>
     </div>
   )
 }

@@ -1,16 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
-import buali from '../../public/images/buali.png'
 
 const Educations = (props) => {
     return (
         <div>
-            <div id="endOfEducations" className="scroll-mt-48"></div>
-
+            <div id="Educations" className="scroll-mt-48"></div>
             {props.showEducation &&
                 <div className="md:ml-5 lg:ml-10 xl:ml-20 flex">
                     <Image alt="" width={100} height={100} className="w-16 h-16 lg:mr-5" src={props.educationData.image} />
-                    {/* <span className="w-10 h-10 bg-white rounded-full"></span> */}
                     <div className="text-gray-dark flex">
                         <div className="">
                             <div className="w-2 h-2 mx-3 lg:mx-7 bg-[#BCC0C2] rounded-full my-3"></div>

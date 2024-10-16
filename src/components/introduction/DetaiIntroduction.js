@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Image from 'next/image';
 import EducationButton from '../EducationButton';
 import Educations from '../Educations';
@@ -8,8 +7,9 @@ import { useState } from 'react';
 
 const DetaiIntroduction = (props) => {
     const [showEducation, setShowEducation] = useState(false);
+
     return (
-        <div id="aboutSection" className="scroll-mt-48">
+        <div id="aboutSection" className="scroll-mt-32">
             <Image alt="" src={introductionRectangle1} className="absolute -top-16 xl:-top-8 left-0 hidden md:block" />
             <div className="mb-32 3xl:mb-40 mt-[3rem] lg:mt-[5rem] 3xl:mt-[8rem]">
                 <p className="text-gray text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-medium mb-3 xl:mb-4 hidden md:block">Hello! I’m</p>
@@ -23,7 +23,6 @@ const DetaiIntroduction = (props) => {
                 <p className="text-gray-dark text-sm md:text-base 2xl:text-lg 3xl:text-xl text-justify mt-2 xl:mt-3 3xl:mt-5">
                     Feel free to reach out. Let’s chat over a virtual coffee! ☕
                 </p>
-
                 <p className="text-gray-dark text-sm md:text-base 2xl:text-lg 3xl:text-xl text-justify mt-2 xl:mt-3 3xl:mt-5">
                     IThis place is for a possible news or something
                 </p>

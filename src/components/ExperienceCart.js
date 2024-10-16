@@ -4,7 +4,8 @@ import robot from '../../public/images/experience/robot.svg'
 import Image from 'next/image'
 
 const ExperienceCart = (props) => {
-    const [showAll, setShowAll] = useState(false)
+    const [showAll, setShowAll] = useState(false);
+    
     return (
         <div className={`relative bg-[#F3F6F9] hover:shadow-4xl cursor-pointer mb-8 md:mb-11 w-[90%] lg:w-[70%] xl:w-[75%] 2xl:w-[65%] ${props.data.information.length <= 2 ? 'pb-2 md:pb-8 px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-4' : 'p-3 md:p-5 lg:p-4'} rounded-lg lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-[1.01]`}>
             <div className="flex">

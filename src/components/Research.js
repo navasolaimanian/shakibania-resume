@@ -3,8 +3,9 @@ import { getData } from '../../lib/getData';
 
 const Research = () => {
     const research = getData('Research.json');
+    
     return (
-        <div id="researchSection" className="pb-10 scroll-mt-40">
+        <div id="researchSection" className="pb-10 scroll-mt-32">
             <div className="container m-auto">
                 <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">
                     <h1 className="text-gray-dark text-xl xl:text-2xl 2xl:text-3xl">Research interests</h1>

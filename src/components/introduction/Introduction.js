@@ -1,4 +1,3 @@
-import React from 'react';
 import image from '../../../public/images/bgImage.png';
 import DetaiIntroduction from './DetaiIntroduction';
 import ImageIntroduction from './ImageIntroduction';

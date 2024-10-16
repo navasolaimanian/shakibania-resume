@@ -1,12 +1,13 @@
-import React from 'react';
 import introductionRectangle2 from '../../../public/images/design/Rectangle 27 (8).svg';
 import introductionRectangle3 from '../../../public/images/design/introductionRectangle2.svg';
 import person from '../../../public/images/person.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getData } from '../../../lib/getData';
+
 const ImageIntroduction = () => {
     const data = getData('socialMedia.json');
+    
     return (
         <div className="hidden md:block">
             <Image alt="" src={introductionRectangle2} className="absolute right-0 -top-4 lg:-top-2 xl:-top-20 hidden xl:block xl:w-[43%] 2xl:w-[40%] 3xl:w-[55rem] h-[53rem] lg:h-[55rem] xl:h-[60rem] 2xl:h-[58rem] 3xl:h-[57rem]" />

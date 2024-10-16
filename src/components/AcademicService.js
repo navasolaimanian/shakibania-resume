@@ -2,9 +2,10 @@ import React from 'react'
 import { getData } from '../../lib/getData'
 
 const AcademicService = () => {
-  const data = getData("AcademicService.json")
+  const data = getData("AcademicService.json");
+  
   return (
-    <div id="academicServiceSection" className="pb-10 scroll-mt-40">
+    <div id="AcademicServiceSection" className="pb-10 scroll-mt-32">
       <div className="container m-auto">
         <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 py-8 md:py-16 text-gray-dark">
           <h1 className=" text-xl xl:text-2xl 2xl:text-3xl">Academic service</h1>
