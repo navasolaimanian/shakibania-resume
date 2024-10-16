@@ -11,6 +11,7 @@ const Modal = (props) => {
     if (keys.length) delete data2[keys[0]];
     const [isCopied, setIsCopied] = useState(false)
 
+ 
     const copyTextHandler = async (e) => {
         const element = document.getElementById("bibText")
 

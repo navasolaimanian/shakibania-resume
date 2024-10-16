@@ -12,7 +12,16 @@ const Publications = (props) => {
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState({});
   const [cartTitle, setCartTitle] = useState('');
- 
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [showModal])
+
+
   return (
     <div id="publicationSection" className="relative scroll-mt-48">
       {showModal && <Modal title={cartTitle} setShowModal={setShowModal} data={modalData} />}
@@ -35,7 +44,7 @@ const Publications = (props) => {
         {!showAllPublications && <button className="text-[#748595] text-xs md:text-sm xl:text-base bg-primary1 mt-6 py-2 px-4 rounded-lg mx-auto flex mb-10"
           onClick={() => setShowAllPublications(!showAllPublications)}
         >
-          {showAllPublications ? 'show less' :'see all Publications'}
+          {showAllPublications ? 'show less' : 'see all Publications'}
         </button>}
       </div>
     </div>
