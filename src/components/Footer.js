@@ -2,6 +2,7 @@ import React from 'react'
 import { getData } from '../../lib/getData';
 import Link from 'next/link';
 import Image from 'next/image';
+import { BASE_URL } from '../config';
 
 const Footer = () => {
     const data = getData('socialMedia.json');
@@ -14,7 +15,7 @@ const Footer = () => {
                         <Link href={socialMedia.link}>
                             <Image
                                 alt={socialMedia.alt}
-                                src={socialMedia.image}
+                                src={BASE_URL + socialMedia.image}
                                 width="0"
                                 height="0"
                                 sizes="100vw"
