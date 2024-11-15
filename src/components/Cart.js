@@ -24,7 +24,7 @@ const Cart = (props) => {
       <div className="sm:col-span-2 flex flex-col justify-between sm:ml-2">
         <div>
           <div className="flex flex-col sm:flex-col-reverse">
-            <p className={`text-xs ${!props.author ? "text-[#E3898B]" :"text-[#C27E63]"} mt-2 sm:mt-1 inline py-1 font-bold`}>{props.data.journal}</p>
+            <p className={`text-xs ${!props.author ? "text-[#E3898B]" : "text-[#C27E63]"} mt-2 sm:mt-1 inline py-1 font-bold`}>{props.data.journal}</p>
             <h1 className="font-bold text-sm md:text-base xl:text-lg 2xl:text-xl text-[#7C7D81]">{props.data.title}</h1>
           </div>
           {props.author && <div className="text-[#A8AFB4] text-[9px] md:text-xs mt-2">
@@ -43,43 +43,53 @@ const Cart = (props) => {
             </button>
           }
           {props.data.pdf &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#b31b1b] border-[#8CA7C3] hover:border-[#b31b1b] text-[#8CA7C3] hover:text-[#b31b1b] rounded flex items-center">
-              <FaFilePdf />
-              <span className="text-xs ml-1">Pdf</span>
-            </button>
+            <Link href={props.data.pdf}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#b31b1b] border-[#8CA7C3] hover:border-[#b31b1b] text-[#8CA7C3] hover:text-[#b31b1b] rounded flex items-center">
+                <FaFilePdf />
+                <span className="text-xs ml-1">Pdf</span>
+              </button>
+            </Link>
           }
           {props.data.code &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#000000] border-[#8CA7C3] hover:border-[#000000] text-[#8CA7C3] hover:text-[#000000] rounded flex items-center">
-              <FaCode />
-              <span className="text-xs ml-1">Code</span>
-            </button>
+            <Link href={props.data.code}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#000000] border-[#8CA7C3] hover:border-[#000000] text-[#8CA7C3] hover:text-[#000000] rounded flex items-center">
+                <FaCode />
+                <span className="text-xs ml-1">Code</span>
+              </button>
+            </Link>
           }
           {props.data.website &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#EB8317] border-[#8CA7C3] hover:border-[#EB8317] text-[#8CA7C3] hover:text-[#EB8317] rounded flex items-center">
-              <IoEarthSharp />
-              <span className="text-xs ml-1">Website</span>
-            </button>
+            <Link href={props.data.url}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#EB8317] border-[#8CA7C3] hover:border-[#EB8317] text-[#8CA7C3] hover:text-[#EB8317] rounded flex items-center">
+                <IoEarthSharp />
+                <span className="text-xs ml-1">website</span>
+              </button>
+            </Link>
           }
           {props.data.youtube &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#f70000] border-[#8CA7C3] hover:border-[#f70000] text-[#8CA7C3] hover:text-[#f70000] rounded flex items-center">
-              <FaYoutube />
-              <span className="text-xs ml-1">YouTube</span>
-            </button>
+            <Link href={props.data.youtube}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#f70000] border-[#8CA7C3] hover:border-[#f70000] text-[#8CA7C3] hover:text-[#f70000] rounded flex items-center">
+                <FaYoutube />
+                <span className="text-xs ml-1">youtube</span>
+              </button>
+            </Link>
           }
           {props.data.slides &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#3D5300] border-[#8CA7C3] hover:border-[#3D5300] text-[#8CA7C3] hover:text-[#3D5300] rounded flex items-center">
-              <SiGoogleslides />
-              <span className="text-xs ml-1">slides</span>
-            </button>
+            <Link href={props.data.slides}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#3D5300] border-[#8CA7C3] hover:border-[#3D5300] text-[#8CA7C3] hover:text-[#3D5300] rounded flex items-center">
+                <SiGoogleslides />
+                <span className="text-xs ml-1">slides</span>
+              </button>
+            </Link>
           }
-          {props.data.slides &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#e7be1d] border-[#8CA7C3] hover:border-[#e7be1d] text-[#8CA7C3] hover:text-[#e7be1d] rounded flex items-center">
-              <SiHuggingface />
-              <span className="text-xs ml-1">HuggingFace</span>
-            </button>
+          {props.data.huggingFace &&
+            <Link href={props.data.huggingFace}>
+              <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#e7be1d] border-[#8CA7C3] hover:border-[#e7be1d] text-[#8CA7C3] hover:text-[#e7be1d] rounded flex items-center">
+                <SiHuggingface />
+                <span className="text-xs ml-1">HuggingFace</span>
+              </button>
+            </Link>
           }
-
-
         </div>
       </div>
     </div>
