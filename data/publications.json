@@ -32,7 +32,7 @@
           "co": true
         }
       ],
-      "image": "/images/publications/article.svg",
+      "image": "/shakibania-resume/images/publications/article.svg",
       "url": "https://doi.org/10.1016/j.bspc.2024.106168",
       "bibtex": {
         "url": "data/bibTex/DR.json",
@@ -72,7 +72,7 @@
           "co": false
         }
       ],
-      "image": "/images/publications/article.svg",
+      "image": "/shakibania-resume/images/publications/article.svg",
       "url": "https://arxiv.org/abs/2308.12902",
       "bibtex": {
         "url": "data/bibTex/DR.json",
@@ -106,7 +106,7 @@
           "co": true
         }
       ],
-      "image": "/images/publications/article.svg",
+      "image": "/shakibania-resume/images/publications/article.svg",
       "url": "https://ieeexplore.ieee.org/abstract/document/9756472",
       "bibtex": {
         "url": "data/bibTex/DR.json",
@@ -160,7 +160,7 @@
           "co": true
         }
       ],
-      "image": "/images/publications/article.svg",
+      "image": "/shakibania-resume/images/publications/article.svg",
       "url": "https://link.springer.com/article/10.1007/s11042-021-10637-1",
       "bibtex": {
         "url": "data/bibTex/DR.json",
@@ -214,7 +214,7 @@
           "co": true
         }
       ],
-      "image": "/images/publications/article.svg",
+      "image": "/shakibania-resume/images/publications/article.svg",
       "url": "https://www.sciencedirect.com/science/article/pii/S1051200419301873",
       "bibtex": {
         "url": "data/bibTex/DR.json",
