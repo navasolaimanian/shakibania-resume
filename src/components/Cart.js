@@ -6,8 +6,9 @@ import { IoEarthSharp } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiGoogleslides } from "react-icons/si";
+import { SiHuggingface } from "react-icons/si";
 import Link from 'next/link';
-import HuggingFace from '../../public/images/icons/HuggingFace.svg'
+// import HuggingFace from '../../public/images/icons/HuggingFace.svg'
 
 const Cart = (props) => {
 
@@ -42,38 +43,38 @@ const Cart = (props) => {
             </button>
           }
           {props.data.pdf &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#b31b1b] border-[#8CA7C3] hover:border-[#b31b1b] text-[#8CA7C3] hover:text-[#b31b1b] rounded flex items-center">
               <FaFilePdf />
               <span className="text-xs ml-1">Pdf</span>
             </button>
           }
           {props.data.code &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#000000] border-[#8CA7C3] hover:border-[#000000] text-[#8CA7C3] hover:text-[#000000] rounded flex items-center">
               <FaCode />
               <span className="text-xs ml-1">Code</span>
             </button>
           }
           {props.data.website &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#EB8317] border-[#8CA7C3] hover:border-[#EB8317] text-[#8CA7C3] hover:text-[#EB8317] rounded flex items-center">
               <IoEarthSharp />
               <span className="text-xs ml-1">Website</span>
             </button>
           }
           {props.data.youtube &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#f70000] border-[#8CA7C3] hover:border-[#f70000] text-[#8CA7C3] hover:text-[#f70000] rounded flex items-center">
               <FaYoutube />
               <span className="text-xs ml-1">YouTube</span>
             </button>
           }
           {props.data.slides &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#3D5300] border-[#8CA7C3] hover:border-[#3D5300] text-[#8CA7C3] hover:text-[#3D5300] rounded flex items-center">
               <SiGoogleslides />
               <span className="text-xs ml-1">slides</span>
             </button>
           }
           {props.data.slides &&
-            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#59697a] border-[#8CA7C3] hover:border-[#59697a] text-[#8CA7C3] hover:text-[#59697a] rounded flex items-center">
-              <Image alt="HuggingFace" src={HuggingFace} />
+            <button className="w-fit py-1 px-2 font-bold text-xs sm:text-sm md:text-base border hover:fill-[#e7be1d] border-[#8CA7C3] hover:border-[#e7be1d] text-[#8CA7C3] hover:text-[#e7be1d] rounded flex items-center">
+              <SiHuggingface />
               <span className="text-xs ml-1">HuggingFace</span>
             </button>
           }

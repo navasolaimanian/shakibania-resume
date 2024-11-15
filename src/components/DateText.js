@@ -8,7 +8,7 @@ const DateText = (props) => {
                 return i; 
             } else if (typeof i === 'object' && i.url && i.word) {
                 return (
-                    <Link className="text-white" key={index} href={i.url}>
+                    <Link className="font-bold" key={index} href={i.url}>
                         {i.word}
                     </Link>
                 ); 
