@@ -4,7 +4,7 @@ import mobileintroductionRectangle2 from '../../../public/images/design/mobilein
 import person from '../../../public/images/person.png';
 import { getData } from '../../../lib/getData';
 import Link from 'next/link';
-import { BASE_URL } from './config';
+import { BASE_URL } from '../../config';
 
 const MobileIntroduction = () => {
   const data = getData('mobileSocialMedia.json');

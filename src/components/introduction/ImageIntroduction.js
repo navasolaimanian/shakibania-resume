@@ -4,7 +4,7 @@ import person from '../../../public/images/person.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getData } from '../../../lib/getData';
-import { BASE_URL } from './config';
+import { BASE_URL } from '../../config';
 
 const ImageIntroduction = () => {
     const data = getData('socialMedia.json');

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { BASE_URL } from './config';
+import { BASE_URL } from '../config';
 
 const Educations = (props) => {
     return (

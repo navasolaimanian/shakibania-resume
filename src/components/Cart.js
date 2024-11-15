@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa";
 import { SiGoogleslides } from "react-icons/si";
 import { SiHuggingface } from "react-icons/si";
 import Link from 'next/link';
-import { BASE_URL } from './config';
+import { BASE_URL } from '../config';
 
 const Cart = (props) => {
 
