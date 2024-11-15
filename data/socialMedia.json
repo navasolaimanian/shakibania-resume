@@ -2,32 +2,32 @@
     "socialMedias": [
         {
             "alt": "mail",
-            "image": "/shakibania-resume/images/socialMedia/mail.svg",
+            "image": "/images/socialMedia/mail.svg",
             "link": ""
         },
         {
             "alt": "googleScholar",
-            "image": "/shakibania-resume/images/socialMedia/googleScholar.svg",
+            "image": "/images/socialMedia/googleScholar.svg",
             "link": ""
         },
         {
             "alt": "X",
-            "image": "/shakibania-resume/images/socialMedia/X.svg",
+            "image": "/images/socialMedia/X.svg",
             "link": ""
         },
         {
             "alt": "LinkedIn",
-            "image": "/shakibania-resume/images/socialMedia/linkedin.svg",
+            "image": "/images/socialMedia/linkedin.svg",
             "link": ""
         },
         {
             "alt": "github",
-            "image": "/shakibania-resume/images/socialMedia/github.svg",
+            "image": "/images/socialMedia/github.svg",
             "link": ""
         },
         {
             "alt": "cv",
-            "image": "/shakibania-resume/images/socialMedia/cv.svg",
+            "image": "/images/socialMedia/cv.svg",
             "link": ""
         }
     ]

@@ -4,6 +4,7 @@ import mobileintroductionRectangle2 from '../../../public/images/design/mobilein
 import person from '../../../public/images/person.png';
 import { getData } from '../../../lib/getData';
 import Link from 'next/link';
+import { BASE_URL } from './config';
 
 const MobileIntroduction = () => {
   const data = getData('mobileSocialMedia.json');
@@ -24,7 +25,7 @@ const MobileIntroduction = () => {
               <Link href={socialMedia.link}>
                 <Image
                   alt={socialMedia.alt}
-                  src={socialMedia.image}
+                  src={BASE_URL + socialMedia.image}
                   width="0"
                   height="0"
                   sizes="100vw"
