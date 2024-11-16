@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const EducationButton = (props) => {
     return (
-        <Link href="#Educations">
+        <Link href={props.showEducation ? '#aboutSection' : '#Educations'}>
             <button className="flex items-center mt-6 mb-10" onClick={() => {
                 props.setShowEducation(!props.showEducation)
             }}>
