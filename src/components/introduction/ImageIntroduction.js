@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getData } from '../../../lib/getData';
 import { BASE_URL } from '../../config';
+import { MdOutlineEmail } from "react-icons/md";
 
 const ImageIntroduction = () => {
     const data = getData('socialMedia.json');
@@ -33,6 +34,9 @@ const ImageIntroduction = () => {
                             </Link>
                         </li>
                     )}
+                    {/* <li> */}
+                        {/* <MdOutlineEmail className="fill-[#EEF3FF] hover:fill-[#1f5b86] h-6 w-6 " /> */}
+                    {/* </li> */}
                 </ul>
             </div>
         </div>
