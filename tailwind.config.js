@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // fontFamily: {
+      //   sans: ['Inter', 'sans-serif'], // Replace 'Inter' with your desired font
+      // },
       backgroundImage: {
       //  "bgImage" : "url(/public/bgImage.png)"
       },

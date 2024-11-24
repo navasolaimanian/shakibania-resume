@@ -31,7 +31,7 @@ const TalksPresentations = (props) => {
         <button className="text-[#748595] text-xs md:text-sm xl:text-base bg-primary1 mt-6 py-2 px-4 rounded-lg mx-auto flex mb-10"
           onClick={() => setShowAllTalksPresentations(!showAllTalksPresentations)}
         >
-          {showAllTalksPresentations ? 'show less' : `see all Talks & Presentations`}
+          {showAllTalksPresentations ? 'show less' : `show more`}
         </button>
       </div>
     </div>

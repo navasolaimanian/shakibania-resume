@@ -5,7 +5,7 @@
       "abstract": "A deep learning approach to diabetic retinopathy detection and grading. A dual-branch model is trained on a selectively merged and augmented dataset from public sources that significantly enhanced the classification outcomes.",
       "journal": "Biomedical Signal Processing and Control",
       "year": "2024",
-      "image": "/images/publications/article.svg",
+      "image": "/images/TalksPresentations/GrahamHill_2011U-embed 1.png",
       "url": "https://doi.org/10.1016/j.bspc.2024.106168",
       "bibtex": "data/bibTex/DR.json",
       "pdf": "https://arxiv.org/abs/2308.09945",

@@ -8,7 +8,7 @@ const DateText = (props) => {
                 return i; 
             } else if (typeof i === 'object' && i.url && i.word) {
                 return (
-                    <Link className="font-bold text-[#303c45]" key={index} href={i.url}>
+                    <Link className="font-bold" key={index} href={i.url}>
                         {i.word}
                     </Link>
                 ); 
@@ -23,7 +23,7 @@ const DateText = (props) => {
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-0.5 sm:pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                     <div className="mt-[0.4rem] md:mt-[0.7rem]">
                         <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
-                        <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>
+                        <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.85rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>
                     </div>
                     <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                 </div>)}
@@ -32,7 +32,7 @@ const DateText = (props) => {
                     <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                     <div className="mt-1">
                         <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
-                        {props.showAll && <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
+                        {props.showAll && <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.85rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                     </div>
                     <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                 </div>)}
@@ -43,7 +43,7 @@ const DateText = (props) => {
                         <p className="text-[9px] sm:text-xs md:text-sm lg:text-base min-w-[27%] lg:min-w-[10%] w-[19rem] sm:w-36 pt-2 text-right mr-3 sm:mr-6">{n.date}</p>
                         <div className="mt-1">
                             <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 mx-3 sm:mx-7 bg-[#BCC0C2] rounded-full"></div>
-                            {props.data.length !== index + 5 && <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.9rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
+                            {props.data.length !== index + 5 && <div className="w-0.5 sm:w-1 h-16 sm:h-14 mx-[0.85rem] sm:mx-[1.85rem] rounded-lg mt-1 bg-[#D7E1EB]"></div>}
                         </div>
                         <p className="text-xs md:text-sm xl:text-lg 3xl:text-xl min-w-[60%] sm:min-w-[60%] ml-3 sm:ml-6">{makeText(n.text)}</p>
                     </div>)}

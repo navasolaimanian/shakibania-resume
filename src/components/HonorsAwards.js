@@ -15,10 +15,10 @@ const HonorsAwards = (props) => {
       <div className="container m-auto">
         <div className="px-7 lg:px-10 xl:px-20 2xl:px-28 3xl:px-44 pt-8 md:pt-16">
           <h1 className="text-gray-dark text-2xl 2xl:text-3xl">Honors & Awards</h1>
-          <DateText showAll={showAllAwards} data={props.data.awards} button={'see all Honors & Awards'} />
+          <DateText showAll={showAllAwards} data={props.data.awards} />
         </div>
         <button className="text-[#748595] text-xs md:text-sm xl:text-base mx-auto mt-7 flex" onClick={() => setShowAllAwards(!showAllAwards)}>
-          {showAllAwards ? `show less` :`see all Honors & Awards`}
+          {showAllAwards ? `show less` :`show more`}
         </button>
       </div>
       <Image alt="" src={awardsRectangle2} className="absolute right-16" />

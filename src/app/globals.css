@@ -18,8 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #ffff
+  background: #ffff;
 }
+
 
 @layer utilities {
   .text-balance {
