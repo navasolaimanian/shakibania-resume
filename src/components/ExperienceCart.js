@@ -7,10 +7,10 @@ const ExperienceCart = (props) => {
     const [showAll, setShowAll] = useState(false);
     
     return (
-        <div className={`relative bg-[#F3F6F9] hover:shadow-4xl cursor-pointer mb-8 md:mb-11 w-full lg:w-[70%] xl:w-[75%] 2xl:w-[65%] ${props.data.information.length <= 2 ? 'pb-4 md:pb-8 px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-4' : 'p-3 md:p-5 lg:p-4'} rounded-lg lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-[1.01]`}>
+        <div className={`relative bg-[#F3F6F9] hover:shadow-4xl cursor-pointer mb-8 md:mb-11 w-full sm:w-[75%] xl:w-[65%] 2xl:w-[55%] ${props.data.information.length <= 2 ? 'pb-4 md:pb-8 px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-4' : 'p-4 md:p-5 lg:p-5'} rounded-lg lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-[1.01]`}>
             <div className="flex">
-                <Image alt="" src={robot} className="absolute w-9 md:w-16 h-auto" />
-                <div className="text-[#313C44] ml-12 sm:ml-14 md:ml-20">
+                <Image alt="" src={robot} className="absolute w-12 md:w-16 lg:w-20 h-auto" />
+                <div className="text-[#313C44] ml-16 md:ml-20 lg:ml-28">
                     <p className="lg:text-lg xl:text-xl 2xl:text-2xl font-semibold">{props.data.position}</p>
                     <div className="text-xs sm:text-sm md:text-base">
                         <p className="">{props.data.laboratory}</p>

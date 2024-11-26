@@ -52,7 +52,7 @@ const Modal = (props) => {
                             <span className="text-red-800">{data1[0]}</span><span className="text-purple-600">{`{${data1[1]},`}</span>
                         </div>
                         <div className="md:text-lg pl-1 md:pl-3">
-                            {Object.entries(data2).map((entry, index) => <div key={index}>{`${entry[0]}${'  '}{${entry[1]}},`}</div>)}
+                            {Object.entries(data2).map((entry, index) => <div key={index}>{`${entry[0]}${'='}{${entry[1]}},`}</div>)}
                         </div>
                         {'}'}
                     </div>
